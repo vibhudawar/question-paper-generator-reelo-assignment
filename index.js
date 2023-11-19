@@ -1,46 +1,17 @@
-// index.js
 const express = require('express');
-const bodyParser = require('body-parser');
-const { MongoClient } = require('mongodb');
 const app = express();
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path');
 const port = 3000;
 
 app.use(bodyParser.json());
 
-const mongoURI = 'your_mongodb_connection_string'; // Replace with your MongoDB connection string
-const client = new MongoClient(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
-
 let questionStore;
 
-async function connectToMongoDB() {
-  try {
-    await client.connect();
-    questionStore = client.db('questionDB').collection('questions');
-    console.log('Connected to MongoDB');
-  } catch (error) {
-    console.error('Error connecting to MongoDB:', error);
-  }
-}
-
-connectToMongoDB();
-
-app.post('/addQuestion', async (req, res) => {
-  const { question, subject, topic, difficulty, marks } = req.body;
-
-  // Validation
-  if (!question || !subject || !topic || !difficulty || !marks) {
-    return res.status(400).json({ success: false, message: 'All fields are required' });
-  }
-
-  try {
-    const newQuestion = { question, subject, topic, difficulty, marks };
-    await questionStore.insertOne(newQuestion);
-    res.json({ success: true, message: 'Question added successfully' });
-  } catch (error) {
-    console.error('Error adding question to MongoDB:', error);
-    res.status(500).json({ success: false, message: 'Error adding question to the database' });
-  }
-});
+// Read the JSON string from the file
+const questionStoreFilePath = path.join(__dirname, 'questionStore.json');
+questionStore = JSON.parse(fs.readFileSync(questionStoreFilePath, 'utf-8'));
 
 app.post('/generateQuestionPaper', async (req, res) => {
   const { totalMarks, difficultyDistribution } = req.body;
@@ -62,12 +33,11 @@ app.post('/generateQuestionPaper', async (req, res) => {
 
 async function generateQuestionPaper(totalMarks, difficultyDistribution) {
   const questionPaper = [];
-  const totalQuestions = await questionStore.countDocuments();
 
   for (const difficulty in difficultyDistribution) {
     const percentage = difficultyDistribution[difficulty];
-    const difficultyQuestions = await questionStore.find({ difficulty }).toArray();
-    const count = Math.ceil((percentage / 100) * totalMarks / 5);
+    const difficultyQuestions = questionStore.filter(question => question.difficulty === difficulty);
+    const count = Math.ceil((percentage / 100) * totalMarks);
 
     if (count > difficultyQuestions.length) {
       console.error(`Not enough ${difficulty} questions available`);
@@ -77,12 +47,13 @@ async function generateQuestionPaper(totalMarks, difficultyDistribution) {
       questionPaper.push(...selectedQuestions);
     }
   }
-
   return questionPaper;
 }
 
 function getRandomQuestions(questionArray, count) {
+  // to order the questions in the random manner
   const shuffledQuestions = questionArray.sort(() => 0.5 - Math.random());
+  // return the selected elements in an array, as a new array
   return shuffledQuestions.slice(0, count);
 }
 

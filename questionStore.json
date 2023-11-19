@@ -1,0 +1,275 @@
+[
+  {
+    "question": "What is the capital of Australia?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 1
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "subject": "Literature",
+    "topic": "Classic Literature",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "subject": "Science",
+    "topic": "Astronomy",
+    "difficulty": "Hard",
+    "marks": 1
+  },
+  {
+    "question": "What is the square root of 144?",
+    "subject": "Mathematics",
+    "topic": "Arithmetic",
+    "difficulty": "Easy",
+    "marks": 1
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "subject": "Art",
+    "topic": "Famous Paintings",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the main component of Earth's atmosphere?",
+    "subject": "Science",
+    "topic": "Earth Science",
+    "difficulty": "Hard",
+    "marks": 1
+  },
+  {
+    "question": "In which year did the Titanic sink?",
+    "subject": "History",
+    "topic": "Maritime History",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 1
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "subject": "Science",
+    "topic": "Medicine",
+    "difficulty": "Hard",
+    "marks": 1
+  },
+  {
+    "question": "What is the formula for the area of a circle?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the currency of Brazil?",
+    "subject": "Geography",
+    "topic": "World Currencies",
+    "difficulty": "Easy",
+    "marks": 1
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "subject": "Literature",
+    "topic": "Modern Literature",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "subject": "Science",
+    "topic": "Chemistry",
+    "difficulty": "Hard",
+    "marks": 1
+  },
+  {
+    "question": "What is the value of pi (π) to two decimal places?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who painted 'Starry Night'?",
+    "subject": "Art",
+    "topic": "Famous Paintings",
+    "difficulty": "Hard",
+    "marks": 1
+  },
+  {
+    "question": "In which year did the American Revolution begin?",
+    "subject": "History",
+    "topic": "American History",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "subject": "Geography",
+    "topic": "Oceans",
+    "difficulty": "Easy",
+    "marks": 1
+  },
+  {
+    "question": "Who is known as the 'Father of Physics'?",
+    "subject": "Science",
+    "topic": "Physics",
+    "difficulty": "Hard",
+    "marks": 1
+  },
+  {
+    "question": "What is the sum of angles in a triangle?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who wrote '1914'?",
+    "subject": "Literature",
+    "topic": "Modern Literature",
+    "difficulty": "Hard",
+    "marks": 1
+  },
+  {
+    "question": "Who is the author of 'The Great Gatsby'?",
+    "subject": "Literature",
+    "topic": "Modern Literature",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the chemical symbol for oxygen?",
+    "subject": "Science",
+    "topic": "Chemistry",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "In which year did the French Revolution begin?",
+    "subject": "History",
+    "topic": "European History",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who painted 'The Starry Night'?",
+    "subject": "Art",
+    "topic": "Famous Paintings",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the capital of South Africa?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who developed the theory of evolution?",
+    "subject": "Science",
+    "topic": "Biology",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the currency of Mexico?",
+    "subject": "Geography",
+    "topic": "World Currencies",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who wrote 'The Catcher in the Rye'?",
+    "subject": "Literature",
+    "topic": "Modern Literature",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the square root of 169?",
+    "subject": "Mathematics",
+    "topic": "Arithmetic",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "In which year did World War I begin?",
+    "subject": "History",
+    "topic": "World Wars",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who sculpted the Statue of David?",
+    "subject": "Art",
+    "topic": "Sculpture",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "subject": "Science",
+    "topic": "Earth Science",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who won the Nobel Prize in Physics in 2020?",
+    "subject": "Science",
+    "topic": "Physics",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the capital of Brazil?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who wrote 'The Little Prince'?",
+    "subject": "Literature",
+    "topic": "Children's Literature",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the freezing point of water in Fahrenheit?",
+    "subject": "Science",
+    "topic": "Chemistry",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "What is the national animal of Australia?",
+    "subject": "Geography",
+    "topic": "National Symbols",
+    "difficulty": "Medium",
+    "marks": 1
+  },
+  {
+    "question": "Who wrote 'Sense and Sensibility'?",
+    "subject": "Literature",
+    "topic": "Classic Literature",
+    "difficulty": "Medium",
+    "marks": 1
+  }
+]
